@@ -7,3 +7,4 @@ fetchUser('github').then(({ name, location }) =>
     location,
   }),
 );
+//

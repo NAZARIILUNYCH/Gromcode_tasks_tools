@@ -1,1 +1,5 @@
-(()=>{"use strict";console.log("redering dashboard ...")})();
+(() => {
+  'use strict';
+  console.log('redering dashboard ...');
+})();
+//
