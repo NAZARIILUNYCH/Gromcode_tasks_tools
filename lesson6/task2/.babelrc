@@ -1,12 +1,14 @@
-{
-  "presets": [
-    [
-      "@babel/preset-env",
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
       {
-        "targets": "> 1%",
-        "useBuiltIns": "usage",
-        "corejs": 3
-      }
-    ]
-  ]
-}
+        test: /.js$/,
+        use: ['babel-loader'],
+      },
+    ],
+  },
+};
