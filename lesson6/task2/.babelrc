@@ -1,14 +1,12 @@
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
+{
+  "presets": [
+    [
+      "@babel/preset-env",
       {
-        test: /.js$/,
-        use: ['babel-loader'],
-      },
-    ],
-  },
-};
+        "targets": "> 1%",
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ]
+}
